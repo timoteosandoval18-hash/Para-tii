@@ -9,9 +9,15 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { background: #fff5f8; font-family: 'Comic Neue', cursive; }
         .hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
-        .titulo-principal { font-family: 'Patrick Hand', cursive; font-size: 4rem; color: #ff6b9d; margin-bottom: 30px; text-shadow: 3px 3px 0px #ffd6e7; }
-        .hello-kitty-main { max-width: 350px; width: 90%; height: auto; filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1)); }
-        .scroll-down { margin-top: 40px; font-size: 1.2rem; color: #ff8fab; animation: bounce 2s infinite; }
+        .titulo-principal { font-family: 'Patrick Hand', cursive; font-size: 4rem; color: #ff6b9d; margin-bottom: 20px; text-shadow: 3px 3px 0px #ffd6e7; }
+        .hello-kitty-main { 
+            max-width: 450px; 
+            width: 95%; 
+            height: auto; 
+            filter: drop-shadow(0 10px 20px rgba(255, 107, 157, 0.3)); 
+            mix-blend-mode: multiply;
+        }
+        .scroll-down { margin-top: 30px; font-size: 1.2rem; color: #ff8fab; animation: bounce 2s infinite; }
         @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
         .textos { padding: 50px 20px; max-width: 700px; margin: 0 auto; }
         .texto-bloque { background: white; border-radius: 20px; padding: 30px 25px; margin: 30px 0; box-shadow: 0 5px 20px rgba(255, 107, 157, 0.15); border: 3px dashed #ffd6e7; }
@@ -25,6 +31,7 @@
         .foto-item { background: white; border-radius: 20px; padding: 15px; margin: 30px 0; box-shadow: 0 8px 25px rgba(255, 107, 157, 0.2); transform: rotate(-2deg); }
         .foto-item:nth-child(even) { transform: rotate(2deg); }
         .foto-item img { width: 100%; border-radius: 15px; display: block; border: 4px solid #ffb3c6; }
+        .texto-foto { text-align: center; font-size: 1.3rem; color: #ff6b9d; margin-top: 15px; font-weight: 700; font-family: 'Patrick Hand', cursive; }
         .corazon-final { text-align: center; font-size: 4rem; padding: 50px 0; animation: latir 1.5s infinite; }
         @keyframes latir { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.2); } }
     </style>
@@ -46,16 +53,24 @@
         <div class="texto-bloque"><p>Tu mereces algo mucho mejor, alguien que te valore, que te ame. Alguien así como yo de insano jajaja</p></div>
         <div class="texto-bloque"><p>Eres muy hermosa bro, eres perfecta. Tienes una sonrisa muy linda, pero no se puede esperar nada porque eres completamente linda.</p></div>
         <div class="texto-bloque"><p>Me gustó todo de ti.</p></div>
-        <div class="texto-bloque"><p>Te amo bro. 💕</p></div>
+        <div class="texto-bloque"><p>Te amo bro. muak 💕</p></div>
     </section>
     <section class="fotos">
-        <h2 class="titulo-fotos">Tú ✨</h2>
+        <h2 class="titulo-fotos">La niña más linda de todxs 💕</h2>
         <div class="galeria">
-            <div class="foto-item"><img src="foto1.jpg" alt="Foto 1"></div>
-            <div class="foto-item"><img src="foto2.jpg" alt="Foto 2"></div>
-            <div class="foto-item"><img src="foto3.jpg" alt="Foto 3"></div>
-        </div>
+            <div class="foto-item">
+                <img src="foto1.jpg" alt="Foto 1">
+                <p class="texto-foto">La más linda y tierna 💗</p>
+            </div>
+            <div class="foto-item">
+                <img src="foto2.jpg" alt="Foto 2">
+                <p class="texto-foto">Los ojitos más hermosos ❤️</p>
+            </div>
+            <div class="foto-item">
+                <img src="foto3.jpg" alt="Foto 3">
+                <p class="texto-foto">La más hermosa 💕</p>
+            </div>
         <div class="corazon-final">💖</div>
     </section>
 </body>
-      </html>
+</html>
